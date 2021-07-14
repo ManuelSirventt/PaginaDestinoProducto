@@ -1,0 +1,370 @@
+!<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Pagina de productos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+         <style>
+        @import url('https://fonts.googleapis.com/css?family=Francois+One');
+
+body {
+  background-color: gray;
+  font-family: 'Francois One', sans-serif;
+  font-style: italic;
+  color: black;
+}
+#page-container {
+  position: relative;
+}
+#header {
+  background-color: green;
+  position: fixed;
+  top: 0;
+  min-height: 77px;
+  width: 100%;
+  padding: 0px 23px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+  @media (max-width: 568px){ 
+      flex-wrap: wrap;
+}
+#header-img {
+  padding: 11px;
+  width:100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 27px;
+} 
+  @media (max-width: 568px){ 
+    position: relative  
+}
+h1 {
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#nav-bar {
+  padding: 3px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 568px) {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.nav-link {
+  margin: 23px;
+  padding: 11px;
+  font-size: 19px;
+  color: black;
+}
+@media (max-width: 568px) {
+    flex-direction: column;
+
+}
+button {
+  margin: 11px;
+  padding: 7px;
+  background-color: rgb(243,112,32);
+  border: 3px solid rgb(51,51,51);
+  border-radius: 9px;
+}
+  @media (max-width: 568px){
+    flex-direction: column;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 127px;
+  margin-bottom: 23px;
+}
+
+  h2 {
+    margin-bottom: 7px;
+  }
+  p {
+    font-size: 19px;
+  }
+  #email {
+    display: flex;
+    text-align: center;
+    font-size: 19px;
+    margin: 13px;
+    width: 323px;
+    height: 27px;
+    border: 2px solid rgb(243,112,32);
+    border-radius: 9px;
+  }
+  #submit {
+    margin: 13px;
+    padding: 5px;
+    font-size: 19px;
+    background-color: rgb(243,112,32);
+    border: 2px solid rgb(51,51,51);
+    border-radius: 9px;
+}
+    .hover {
+      background-color: red;
+      transition: background-color 2s;
+    }
+  
+  @media (max-width: 568px) {
+    margin-top: 320px;
+  }
+
+.contents {
+  width: 100%;
+  margin: 0, auto;
+}
+#features {
+  padding: 23px;
+}
+  .list {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    }
+  .icon {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 41px 17px 0px 0px;
+    padding: 13px;
+    color: rgb(243,112,32);
+}
+    .material-icons {
+      transform: scale(2,2);
+      }
+    @media (max-width: 568px) {
+      .display: none;
+    }
+  .discription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+  }@media (max-width: 568px) {
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+      padding: 20px;
+      height: 250px;
+    }
+  @media (max-width: 568px) {
+    margin-top: 0px;
+  }
+#how-it-works {
+  display: flex;
+  margin-top: 71px;
+  justify-content: center;
+}
+    iframe {
+      max-width: 560px;
+      width: 100%;
+}
+#pricing {
+  display: flex;
+  flex-direction: row;
+  margin-top: 71px;
+  justify-content: center;
+  text-align: center;
+  padding: 101px;
+}
+  img {
+    width: 250px;
+    height: 170px;
+    border: 3px solid black;
+  }
+  #copper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 11px;
+    border: 7px solid rgb(243,112,32);
+    border-radius: 9px;
+  }
+  #platinum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 11px;
+    border: 7px solid rgb(243,112,32);
+    border-radius: 9px;
+  }
+  #iridium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 11px;
+    border: 7px solid rgb(243,112,32);
+    border-radius: 9px;
+  }
+  .option {
+    font-size: 23px;
+    text-align: center;
+    padding: 7px;
+  }
+  .btn {
+    padding: 13px;
+    width: 97px;
+}
+    &:hover {
+     background-color: red;
+     transition: background-color 2s;
+    }
+  .li {
+    text-align: left;
+  }
+  @media (max-width: 568px) {
+    flex-direction: column;
+    #copper, #platinum, #iridium {
+      max-width: 568px;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+  }
+footer {
+  margin: auto;
+  text-align: center;
+}
+</style>
+  </head>
+  
+  <body>
+    <div id="page-container"> 
+      <header id="header"> 
+        <img id="header-img" src="http://www.free-icons-download.net/images/spark-plug-icon-27844.png" alt="Origin Spark Plugs Logo"/>
+        <h1>Bujías de origen</h1> 
+        <nav id="nav-bar"> 
+          <button><a class="nav-link" href="#features">Caracteristicas</a></button>
+          <button><a class="nav-link" href="#how-it-works">Como funciona</a></button>
+          <button><a class="nav-link" href="#pricing">Precios</a></button>
+        </nav>
+      </header>
+      <br>
+    
+      <div class="form-container"> 
+        <h2>Chispas la primera vez, <u>cada vez</u></h2>
+        <p>¡Suscríbase a nuestra lista de correo para recibir alertas de noticias y ofertas!</p>
+        <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" type="email" name="email" placeholder="Por favor inserte su correo aqui" required/>
+          <input id="submit" type="submit" value="Enciendan sus motores"/>
+        </form>
+      </div>
+      <br>
+   
+      <div class="contents"> 
+        <section id="features"> 
+            <div class="list"> 
+            <div class="icon">
+              <i class="material-icons">assignment_turned_in</i>
+            </div>
+            <div class="discription">
+              <h2>Calidad</h2>
+              <p>¡Nuestra prioridad es proporcionar a nuestros clientes la bujía número uno en calidad de montaje y rendimiento! </p>
+            </div>
+          </div>
+          <div class="list"> 
+            <div class="icon">
+              <i class="material-icons">build</i>
+            </div>
+            <div class="discription">
+              <h2>Tecnologia</h2>
+              <p>¡Construimos nuestras bujías con materiales de primera calidad y utilizamos lo último en tecnología de combustión para ayudar a maximizar la eficiencia de combustible de su vehículo!</p>
+            </div>
+          </div>
+          <div class="list"> 
+            <div class="icon">
+              <i class="material-icons">settings_phone</i>
+            </div>
+            <div class="discription">
+              <h2>Servicio al cliente</h2>
+              <p>¡Nuestros clientes  mantienen el motor en marcha porque ofrecemos servicio 24/7, para garantizar que estén 100% satisfechos con el ajuste y el rendimiento de sus bujías!</p>
+            </div>
+          </div>
+        </section>
+        <br>
+        
+        <section id="how-it-works"> 
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dea07uYGkps" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <br>
+        
+        <section id="pricing"> 
+          <div id="copper">
+            <div class="option">
+              Punta de Cobre
+            </div>
+            <img src="http://shop.advanceautoparts.com/wcsstore/CVWEB/Attachment/staticbusinesscontent/image/kh-copper-plug.jpg" alt="Origin Copper Spark Plug" />
+            <h3>7mil $ por enchufe</h3>
+            <ul>
+              <li>Garantía de 3 años / 100,000 kilometros</li>
+              <li>Recubrimiento de óxido para prevenir la corrosión.</li>
+              <li>¡Comienzo garantizado en todo momento!</li>
+            </ul>
+            <button class="btn">Seleccionar</button>
+          </div>
+          <div id="platinum">
+            <div class="option">
+              Punta de Platino
+            </div>
+            <img src="http://shop.advanceautoparts.com/wcsstore/CVWEB/Attachment/staticbusinesscontent/image/kh-platinum-plug.jpg" alt="Origin Platinum Spark Plug" />
+            <h3>17mil $ por enchufe</h3>
+            <ul>
+              <li>Garantía de 5 años / 100,000 kilometros</li>
+              <li>El disco soldado con platino asegura una mejor chispa</li>
+              <li>¡Comienzo garantizado en modelos más nuevos!</li>
+            </ul>
+            <button class="btn">Seleccionar</button>
+          </div>
+          <div id="iridium">
+            <div class="option">
+              Punta de Iridio
+            </div>
+            <img src="http://shop.advanceautoparts.com/wcsstore/CVWEB/Attachment/staticbusinesscontent/image/kh-iridium-spark-plug.jpg" alt="Origin Iridium Spark Plug" />
+            <h3>24mil $ por enchufe</h3>
+            <ul>
+              <li>7 años de garantia / 100,000 kilometros.</li>
+              <li>La varilla soldada con iridio garantiza la mejor chispa.</li>
+              <li>Si éste falla, ¡está en nosotros!</li>
+            </ul>
+            <button class="btn">Seleccionar</button>
+          </div>
+        </section>
+        <br>
+        
+      </div>
+      <br>
+  
+    </div>
+  </body>
+  
+  <footer> 
+    <span>&copy; 2021 Desarrollado por: MartSystem</span>
+  </footer>
+</html>
